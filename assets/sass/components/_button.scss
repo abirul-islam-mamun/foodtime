@@ -1,0 +1,38 @@
+
+.theme-btn {
+	display: inline-block;
+	background: #396C03;
+	color: $white;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 500;
+	height: 58px;
+	line-height: 58px;
+	text-align: center;
+	outline: none;
+	border: 1px solid #396C03;
+	border-radius: 225px;
+	transition: all .3s ease;
+
+	&:hover {
+		background: #ff8b00;
+		color: white;
+		border: 1px solid #ff8b00;
+	}
+    @media (max-width:768px) {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+// button for blog page 
+
+
+
+

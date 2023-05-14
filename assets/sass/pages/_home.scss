@@ -1,0 +1,110 @@
+
+.food-explore{
+    background: rgba(255, 139, 0, 0.05);
+    .explore-image {
+        background-image: url(/assets/images/city.png);
+        background-position: bottom left;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        animation: moving 5s linear infinite;
+        // transition: all .3s ease;
+        background-repeat: repeat-x;
+        // animation: city 5s linear infinite;
+        @media (max-width: 991px) {
+            padding: 150px;
+        }
+        
+
+        // margin-right: -70px;
+        // position: relative;
+        // img {
+        //     width: 100%;
+        // }
+        .cycle-img {
+            position: absolute;
+            bottom: 0;
+            @media (max-width: 991px) {
+                left: 0;
+                img{
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+.header-right {
+    display: flex;
+}
+.explore-text {
+    margin-bottom: 30px;
+    .explore-title {
+        font-size: 50px;
+        line-height: 65px;
+        font-weight: 700;
+        color: #396C03;
+        margin-bottom: 10px;
+        @media (max-width: 991px) {
+            font-size: 35px;
+        }
+        @media (max-width: 768px) {
+            font-size: 30px;
+            line-height: 45px;
+        }
+    }
+    .explore-subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #676767;
+        margin-bottom: 10px;
+    }
+    .explore-btn{
+        padding: 0 60px;
+        i {
+            margin-left: 15px;
+        }
+    }
+}
+
+//cycle animation 
+@keyframes runing{
+    0%{
+      left: -110px;
+    }
+    10%{
+      left: -100px;
+    }
+    20%{
+      left: -90px;
+    }
+    30%{
+        left: -80px;
+    }
+    40%{
+        left: -70px;
+    }
+    50%{
+        left: -60px;
+    }
+    60%{
+        left: -50px;
+    }
+    70%{
+        left: -40px;
+    }
+    80%{
+        left: -30px;
+    }
+    90%{
+        left: -20px;
+    }
+    100%{
+      left: -10px;
+    }
+  
+}
+@keyframes moving {
+    from { background-position: bottom left;}
+    to { background-position: bottom right;}
+}

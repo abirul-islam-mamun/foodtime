@@ -1,0 +1,181 @@
+.hero-area {
+    height: 750px;
+    background: rgba(107, 145, 66, 0.1);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    @media (max-width:991px) {
+        height: 450px;
+    }
+    .shape-01 {
+        position: absolute;
+        top: -40px;
+        left: -55px;
+        z-index: 1;
+        animation: animate 7s linear infinite;
+        img{
+            max-width: 200px;
+        }
+    }
+    .shape-02 {
+        position: absolute;
+        top: 11px;
+        right: 0;
+        z-index: 1;
+        animation: animate 3s linear infinite;
+        img {
+            max-width: 200px;
+        }
+    }
+}
+.hero-text {
+    position: relative;
+    z-index: 11;
+    .title {
+        font-family: $second-font;
+        font-size: 65px;
+        font-weight: 700;
+        color: #396C03;
+        line-height: 85px;
+        margin-bottom: 25px;
+        
+        @media (max-width: 1200px) {
+            font-size: 35px;
+            line-height: 45px;
+        }
+        @media (max-width: 991px) {
+            font-size: 45px;
+            line-height: 55px;
+        }
+        @media (max-width: 768px) {
+            font-size: 30px;
+            line-height: 45px;
+        }
+    }
+    .subtitle {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 34px;
+        color: #676767;
+        margin-bottom: 25px;
+        @media (max-width: 991px) {
+            font-size: 19px;
+        }
+    }
+    .location-search {
+        position: relative;
+        .input-div{
+            position: relative;
+            width: 100%;
+            .location-input {
+                background: #FFFFFF;
+                opacity: 0.3;
+                border: 2px solid #396C03;
+                border-radius: 120px;
+                padding: 15px 15px  15px 75px ;
+                height: 70px;
+                width: 100%;
+                font-size: 20px;
+                font-weight: 500;
+                outline: none;
+                
+                @media (max-width: 991px) {
+                    height: 50px;
+                    font-size: 18px;
+                }
+                &::placeholder{
+                    color: #C7C7C7;
+                    font-size: 20px;
+                    font-weight: 500;
+                    @media (max-width: 991px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #FF8B00;
+                z-index: 1;
+                cursor: pointer;
+                @media (max-width: 991px) {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+        .search-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 0 50px;
+            height: 70px;
+            @media (max-width: 991px) {
+                height: 50px;
+                padding: 0 40px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+.hero-image {
+    position: relative;
+    z-index: 11;
+    @media (max-width:991px) {
+        display: none;
+    }
+    img {
+        width: 100%;
+    }
+    .delivery-count {
+        padding: 25px 35px;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+        backdrop-filter: blur(6px);
+        border-radius: 8px;
+        display: inline-block;
+        position: absolute;
+        top: -90px;
+        left: 30%;
+        .counter-div {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            img{
+                max-width: 40px;
+            }
+            .counter-times {
+                font-size: 40px;
+                line-height: 52px;
+                color: #FF8B00;
+                font-weight: 700;
+            }
+        }
+        .counter-subtitle {
+            font-weight: 600;
+            font-size: 21px;
+
+        }
+    }
+    .shape-img {
+        position: absolute;
+        top: -13%;
+        left: -10%;
+        @media (max-width: 1400px) {
+            top: -18%;
+        }
+        @media (max-width: 1200px) {
+            top: -22%;
+            left: -18%;
+        }
+        img{
+            max-width: 170px;
+        }
+    }
+}
