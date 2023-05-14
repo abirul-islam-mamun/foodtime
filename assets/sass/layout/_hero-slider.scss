@@ -17,6 +17,9 @@
         img{
             max-width: 200px;
         }
+        @media (max-width: 991px) {
+            display: none;
+        }
     }
     .shape-02 {
         position: absolute;
@@ -26,6 +29,9 @@
         animation: animate 3s linear infinite;
         img {
             max-width: 200px;
+        }
+        @media (max-width: 991px) {
+            display: none;
         }
     }
 }
